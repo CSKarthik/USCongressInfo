@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="374dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkestgrey"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/toolbarBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/arrow_back"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bills Info"
+                android:layout_gravity="left"
+                android:id="@+id/toolbar_bills"
+                android:layout_marginLeft="30dp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"
+                android:textSize="18sp" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+
+    android:weightSum="1"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="200dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.69"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:text="Bill ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/billId"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/billIdValue"
+                    android:layout_weight="1126.27"
+                    android:layout_gravity="end"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Title:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Bill Type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/billType"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/billTypeValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Sponsor:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sponsor"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sponsorValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Chamber:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chamber"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chamberValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Status:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Introduced On:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/introducedOn"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/introducedOnValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Congress URL:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/congressURL"
+                    android:inputType="text"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/congressURLValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Version Status:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/version"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/versionValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="Bill URL:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/billURL"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/display_text"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/billURLValue"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/display_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>

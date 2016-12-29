@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CongressDB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="leg_heading">Legislators</string>
+    <string name="bills_heading">Bills</string>
+    <string name="comm_heading">Committees</string>
+    <string name="fav_heading">Favourites</string>
+    <string name="myself_heading">About me</string>
+
+    <string name="leg_details">Legislator Info</string>
+    <string name="comm_details">Committee Info</string>
+
+</resources>

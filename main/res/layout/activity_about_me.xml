@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+
+    android:weightSum="1"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="374dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkestgrey"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/toolbarBackAct"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/arrow_back"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About me"
+                android:layout_gravity="left"
+                android:id="@+id/toolbar_bills"
+                android:layout_marginLeft="30dp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"
+                android:textSize="18sp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/download"
+                android:id="@+id/imageView"
+                android:layout_marginBottom="48dp"
+                android:layout_gravity="center" />
+
+
+            <TextView
+                android:text="Karthik Chindalur Sridhara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/textView2"
+                android:textStyle="normal|bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="5974857905"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:id="@+id/textView"
+                android:textStyle="normal|bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
